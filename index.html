@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Translation & Tech</title>
+    <title>Heling Li | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
-        /* 自定义滚动条 */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0a0a0a; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #555; }
         
-        /* 动画类 */
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* 鼠标悬停微光效果 */
-        .bento-card:hover { border-color: #4285F4; box-shadow: 0 0 20px rgba(66, 133, 244, 0.2); }
+        .bento-card:hover { border-color: #4285F4; box-shadow: 0 0 30px rgba(66, 133, 244, 0.15); }
         .gradient-text { background: linear-gradient(90deg, #4285F4, #EA4335); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body class="antialiased selection:bg-blue-500 selection:text-white">
 
-    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-black/50 backdrop-blur-md">
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/10 bg-black/80 backdrop-blur-md">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="self-center text-xl font-bold whitespace-nowrap text-white tracking-tighter">MY<span class="text-blue-500">PORTFOLIO</span></a>
+            <a href="#" class="self-center text-xl font-bold whitespace-nowrap text-white tracking-tighter">HELING<span class="text-blue-500">LI</span></a>
             <div class="hidden w-full md:block md:w-auto">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
                     <li><a href="#about" class="block py-2 px-3 text-gray-400 hover:text-white transition">About</a></li>
@@ -38,22 +35,21 @@
         </div>
     </nav>
 
-    <section class="h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="about" class="h-screen flex items-center justify-center relative overflow-hidden">
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px]"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-[128px]"></div>
 
         <div class="text-center z-10 px-4 reveal active">
-            <p class="text-sm md:text-base text-gray-400 mb-4 tracking-widest uppercase">Translation · Localization · Technology</p>
+            <p class="text-sm md:text-base text-gray-400 mb-4 tracking-widest uppercase">TLM Candidate @ MIIS</p>
             <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-7xl lg:text-8xl text-white">
-                Bridging Worlds<br>With <span class="gradient-text">Precision.</span>
+                Bridging Tech & <span class="gradient-text">Business.</span>
             </h1>
             <p class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 lg:px-48 max-w-4xl mx-auto">
-                I combine linguistic expertise with technical innovation to localize products for global impact. 
-                <br>Aspiring Business Intern @ Google.
+                Standing at the intersection of technology and commerce, I am dedicated to connecting the world through strategic communication and localization.
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 <a href="#work" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                    View Projects
+                    View My Works
                     <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
@@ -64,59 +60,66 @@
 
     <section id="work" class="py-20 px-4 max-w-screen-xl mx-auto">
         <div class="text-left mb-12 reveal">
-            <h2 class="text-3xl font-bold text-white mb-2">Selected Works</h2>
-            <p class="text-gray-500">Showcasing technical localization & project management.</p>
+            <h2 class="text-3xl font-bold text-white mb-2">Selected Projects</h2>
+            <p class="text-gray-500">Demonstrating expertise in Automation, Process Management, and Localization.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
             
             <div class="bento-card md:col-span-2 bg-neutral-900 border border-white/5 rounded-3xl p-8 transition duration-300 group relative overflow-hidden cursor-pointer">
                 <div class="relative z-10">
-                    <span class="bg-blue-900/30 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-800 mb-4 inline-block">Localization Project</span>
-                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Game Localization Workflow</h3>
-                    <p class="text-gray-400 mb-4">Managed end-to-end localization for a narrative-driven RPG. Utilized CAT tools (MemoQ) and Python scripts to automate asset extraction, reducing turnaround time by 30%.</p>
+                    <span class="bg-blue-900/30 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded border border-blue-800 mb-4 inline-block">Professional Practicum @ MIIS</span>
+                    <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Localization Project Lead</h3>
+                    <p class="text-gray-400 mb-4 pr-4">
+                        Orchestrated the end-to-end delivery of 5 multimedia projects across 10 locales using Jira. 
+                        Coordinated workflows for 19 languages, balancing resource allocation with hands-on QA and DTP support.
+                    </p>
                     <ul class="flex flex-wrap gap-2 mt-4">
-                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">MemoQ</li>
-                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">Python</li>
-                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">JIRA</li>
+                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">Jira Agile</li>
+                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">DTP</li>
+                        <li class="text-xs text-gray-500 border border-gray-700 px-2 py-1 rounded-full">Team Management</li>
                     </ul>
                 </div>
-                <div class="absolute right-0 bottom-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-tl-full opacity-50"></div>
+                <div class="absolute right-0 bottom-0 w-40 h-40 bg-gradient-to-br from-blue-600/20 to-transparent rounded-tl-full opacity-40"></div>
             </div>
 
             <div class="bento-card bg-neutral-900 border border-white/5 rounded-3xl p-8 transition duration-300 flex flex-col justify-between">
                 <div>
-                    <h3 class="text-xl font-bold text-white mb-4">Tech Stack</h3>
-                    <div class="space-y-3">
-                        <div class="w-full bg-gray-800 rounded-full h-2.5">
-                            <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%"></div>
+                    <h3 class="text-xl font-bold text-white mb-4">Core Competencies</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-xs text-gray-400">Trados / MemoQ</span><span class="text-xs text-gray-500">Advanced</span></div>
+                            <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="bg-blue-500 h-1.5 rounded-full" style="width: 95%"></div></div>
                         </div>
-                        <p class="text-xs text-right text-gray-400">Trados / MemoQ</p>
-                        
-                        <div class="w-full bg-gray-800 rounded-full h-2.5">
-                            <div class="bg-green-500 h-2.5 rounded-full" style="width: 75%"></div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-xs text-gray-400">Python / Regex</span><span class="text-xs text-gray-500">Intermediate</span></div>
+                            <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="bg-green-500 h-1.5 rounded-full" style="width: 75%"></div></div>
                         </div>
-                        <p class="text-xs text-right text-gray-400">Python / Regex</p>
-
-                        <div class="w-full bg-gray-800 rounded-full h-2.5">
-                            <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 85%"></div>
+                        <div>
+                            <div class="flex justify-between mb-1"><span class="text-xs text-gray-400">Jira / Crowdin</span><span class="text-xs text-gray-500">Expert</span></div>
+                            <div class="w-full bg-gray-800 rounded-full h-1.5"><div class="bg-yellow-500 h-1.5 rounded-full" style="width: 90%"></div></div>
                         </div>
-                        <p class="text-xs text-right text-gray-400">Adobe Creative Suite</p>
                     </div>
                 </div>
             </div>
 
             <div class="bento-card bg-neutral-900 border border-white/5 rounded-3xl p-8 transition duration-300">
-                 <span class="bg-green-900/30 text-green-300 text-xs font-medium px-2.5 py-0.5 rounded border border-green-800 mb-4 inline-block">Automation</span>
-                <h3 class="text-xl font-bold text-white mb-2">Regex Quality Assurance</h3>
-                <p class="text-sm text-gray-400">Developed custom Regex rules to identify potential tag errors in localized strings, improving QA efficiency.</p>
+                 <span class="bg-green-900/30 text-green-300 text-xs font-medium px-2.5 py-0.5 rounded border border-green-800 mb-4 inline-block">Quality Assurance</span>
+                <h3 class="text-xl font-bold text-white mb-2">Automated QA with Regex</h3>
+                <p class="text-sm text-gray-400 mb-4">Developed custom Regular Expressions (Regex) in Trados to detect and prevent complex tag corruption errors, significantly enhancing QA efficiency.</p>
+                <div class="flex gap-2">
+                    <span class="text-[10px] text-gray-500 border border-gray-700 px-2 py-0.5 rounded">Regex101</span>
+                    <span class="text-[10px] text-gray-500 border border-gray-700 px-2 py-0.5 rounded">Trados Studio</span>
+                </div>
             </div>
 
             <div class="bento-card md:col-span-2 bg-neutral-900 border border-white/5 rounded-3xl p-8 transition duration-300 relative overflow-hidden">
-                 <span class="bg-purple-900/30 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded border border-purple-800 mb-4 inline-block">Multimedia</span>
-                <h3 class="text-2xl font-bold text-white mb-2">Subtitling & DTP</h3>
-                <p class="text-gray-400 max-w-md">Led a team of 3 to localize promotional videos. Handled timing, burning subtitles, and recreating motion graphics.</p>
-                <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-600 rounded-full blur-xl opacity-40"></div>
+                 <span class="bg-purple-900/30 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded border border-purple-800 mb-4 inline-block">Workflow Automation</span>
+                <h3 class="text-2xl font-bold text-white mb-2">WordPress Continuous Localization</h3>
+                <p class="text-gray-400 max-w-xl">
+                    Architected a continuous localization pipeline integrating WordPress with Crowdin. Enabled real-time content synchronization, eliminating manual file handoffs and accelerating time-to-market.
+                </p>
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-purple-600 rounded-full blur-2xl opacity-20"></div>
             </div>
 
         </div>
@@ -124,9 +127,12 @@
 
     <footer id="contact" class="bg-black border-t border-white/10 py-12">
         <div class="max-w-screen-xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold text-white mb-6">Ready to make an impact.</h2>
-            <a href="mailto:your.email@example.com" class="text-blue-500 hover:text-blue-400 text-lg transition">your.email@example.com</a>
-            <p class="text-gray-600 text-sm mt-8">&copy; 2025 Design by Gemini. Hand-coded with Tailwind CSS.</p>
+            <h2 class="text-2xl font-bold text-white mb-6">Let's Connect.</h2>
+            <p class="text-gray-500 mb-6">Open to opportunities in Localization Program Management & Technical Account Management.</p>
+            <a href="mailto:helingli333@gmail.com" class="inline-block text-xl font-semibold text-blue-500 hover:text-white transition-colors duration-300 border-b-2 border-transparent hover:border-blue-500">
+                helingli333@gmail.com
+            </a>
+            <p class="text-gray-700 text-xs mt-12">&copy; 2025 Heling Li. Built for the future.</p>
         </div>
     </footer>
 
@@ -135,7 +141,7 @@
             const reveals = document.querySelectorAll('.reveal');
             const revealOnScroll = () => {
                 const windowHeight = window.innerHeight;
-                const elementVisible = 100;
+                const elementVisible = 50;
                 reveals.forEach((reveal) => {
                     const elementTop = reveal.getBoundingClientRect().top;
                     if (elementTop < windowHeight - elementVisible) {
@@ -144,7 +150,7 @@
                 });
             };
             window.addEventListener('scroll', revealOnScroll);
-            revealOnScroll(); // Trigger once on load
+            revealOnScroll(); 
         });
     </script>
 </body>
